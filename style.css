@@ -34,7 +34,7 @@ body {
 
 .brand-section {
   position: absolute;
-  top: max(8%, calc(env(safe-area-inset-top, 0px) + 15px));
+  top: max(18%, calc(env(safe-area-inset-top, 0px) + 40px));
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -42,7 +42,7 @@ body {
   align-items: center;
   gap: clamp(0.3rem, 1vw, 1.2rem);
   width: 100%;
-  max-width: 90vw;
+  max-width: 92vw;
   box-sizing: border-box;
   z-index: 10;
 }
@@ -50,10 +50,10 @@ body {
 .brand-title {
   font-family: 'Fredoka', 'Nunito', 'Segoe UI', system-ui, sans-serif;
   font-weight: 700;
-  font-size: clamp(1.4rem, 9.2vw, 7.5rem);
+  font-size: clamp(1.55rem, 10.1vw, 8.25rem);
   line-height: 1.05;
   color: #f79665;
-  -webkit-text-stroke: clamp(2px, 0.55vw, 8px) #182e3e;
+  -webkit-text-stroke: clamp(2.2px, 0.6vw, 9px) #182e3e;
   paint-order: stroke fill;
   letter-spacing: 0.01em;
   text-align: center;
