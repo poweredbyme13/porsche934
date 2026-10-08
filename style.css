@@ -50,10 +50,10 @@ body {
 .brand-title {
   font-family: 'Fredoka', 'Nunito', 'Segoe UI', system-ui, sans-serif;
   font-weight: 700;
-  font-size: clamp(1.55rem, 10.1vw, 8.25rem);
+  font-size: clamp(1.85rem, 12.1vw, 9.9rem);
   line-height: 1.05;
   color: #f79665;
-  -webkit-text-stroke: clamp(2.2px, 0.6vw, 9px) #182e3e;
+  -webkit-text-stroke: clamp(2.6px, 0.72vw, 10.8px) #182e3e;
   paint-order: stroke fill;
   letter-spacing: 0.01em;
   text-align: center;
@@ -80,7 +80,7 @@ body {
 }
 
 .youtube-icon {
-  width: clamp(2.5rem, 13vw, 6.5rem);
+  width: clamp(3rem, 15.6vw, 7.8rem);
   height: auto;
   display: block;
 }
