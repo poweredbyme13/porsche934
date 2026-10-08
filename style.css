@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #0b0f14;
+}
+
+.hero-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  background-image: url('IMG_4312.JPEG');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.brand-section {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(0.4rem, 1vw, 1.2rem);
+  z-index: 10;
+}
+
+.brand-title {
+  font-family: 'Fredoka', 'Nunito', 'Segoe UI', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(4.2rem, 11vw, 9.3rem);
+  line-height: 1.05;
+  color: #f79665;
+  -webkit-text-stroke: clamp(5px, 0.8vw, 10px) #182e3e;
+  paint-order: stroke fill;
+  letter-spacing: 0.03em;
+  text-align: center;
+  white-space: nowrap;
+  user-select: none;
+  filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.45));
+}
+
+.youtube-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1),
+              filter 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
+  cursor: pointer;
+}
+
+.youtube-link:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 6px 20px rgba(255, 0, 0, 0.6))
+          drop-shadow(0 2px 8px rgba(0, 0, 0, 0.6));
+}
+
+.youtube-icon {
+  width: clamp(3.8rem, 9.5vw, 8rem);
+  height: auto;
+  display: block;
+}
+
+
+.qr-wrapper {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  width: 25vmin;
+  height: 25vmin;
+  max-width: 25vmin;
+  max-height: 25vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  padding: 1.2vmin;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35),
+              0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1),
+              box-shadow 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  z-index: 10;
+}
+
+.qr-wrapper:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45),
+              0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.qr-code {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  user-select: none;
+  -webkit-user-drag: none;
+}
