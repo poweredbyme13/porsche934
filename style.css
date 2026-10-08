@@ -34,25 +34,27 @@ body {
 
 .brand-section {
   position: absolute;
-  top: 10%;
+  top: max(8%, calc(env(safe-area-inset-top, 0px) + 15px));
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: clamp(0.4rem, 1vw, 1.2rem);
+  width: max-content;
+  max-width: 92vw;
   z-index: 10;
 }
 
 .brand-title {
   font-family: 'Fredoka', 'Nunito', 'Segoe UI', system-ui, sans-serif;
   font-weight: 700;
-  font-size: clamp(4.2rem, 11vw, 9.3rem);
+  font-size: clamp(2.2rem, 12.5vw, 8.5rem);
   line-height: 1.05;
   color: #f79665;
-  -webkit-text-stroke: clamp(5px, 0.8vw, 10px) #182e3e;
+  -webkit-text-stroke: clamp(2.5px, 0.7vw, 9px) #182e3e;
   paint-order: stroke fill;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   text-align: center;
   white-space: nowrap;
   user-select: none;
@@ -77,7 +79,7 @@ body {
 }
 
 .youtube-icon {
-  width: clamp(3.8rem, 9.5vw, 8rem);
+  width: clamp(3rem, 16vw, 7.5rem);
   height: auto;
   display: block;
 }
@@ -85,8 +87,8 @@ body {
 
 .qr-wrapper {
   position: fixed;
-  right: 5%;
-  bottom: 5%;
+  right: max(5%, env(safe-area-inset-right, 0px));
+  bottom: max(5%, env(safe-area-inset-bottom, 0px));
   width: 25vmin;
   height: 25vmin;
   max-width: 25vmin;
